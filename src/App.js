@@ -2,12 +2,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import fondo from './fondo.jfif';
+import fondo from './fondo.jpg';
 
 
 function App() {
   return (
-    <div style={{ backgroundImage:`url(${fondo})`}}>
+    <div className='contenedor' style={{backgroundImage:`url(${fondo})`}}>
       <NavBar />
       <ItemListContainer greeting={'~ Bienvenidos al Shop de Total Vision Sports ~'} />
     </div>
