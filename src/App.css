@@ -39,7 +39,9 @@
 
 .contenedor {
   background-size: cover;
+  background-repeat: round;
   size: 10rem;
-  height: 100vh;
+  height: fit-content;
+
 }
 

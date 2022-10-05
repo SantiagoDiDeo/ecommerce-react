@@ -1,0 +1,30 @@
+.tituloSaludo {
+    display: flex;
+    flex-direction: column;
+    font-family: andale mono, monospace;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}   
+
+
+.titulo {
+    padding: 1rem;
+    background: linear-gradient(130deg, rgb(155, 154, 154,1) 0%, rgba(223,223,223,1) 50%, rgb(155, 154, 154,1) 100%);
+
+}
+
+.greeting {
+    font-style: italic;
+    text-align: center;
+
+}
+
+.productos {
+    padding: 0 2rem;
+    text-align: center;
+
+}
