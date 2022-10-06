@@ -20,12 +20,14 @@ const Item = ({ product }) => {
                         <Card.Text>
                             $ {product.price}
                         </Card.Text>
-                        <Card.Text>
+                        <Card.Subtitle >
                             <ItemCount />
-                        </Card.Text>
-                        <Link to={`/Item/${product.id}`}>
+                        </Card.Subtitle>
+                        <Card.Subtitle className='divCounter'>
+                        <Link  to={`/Item/${product.id}`}>
                             <Button variant="primary">Ver detalle</Button>
                         </Link>
+                        </Card.Subtitle>
                 </Card.Body>
             </Card>
         </div>    

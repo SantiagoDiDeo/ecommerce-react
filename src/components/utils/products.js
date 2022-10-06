@@ -1,7 +1,7 @@
 
 
     const products = [
-        {id: 1, title: 'Protector bucal', category:'proteccion', description:'Protector bucal de silicona. Colores disponibles: Negro, rosa, transparente.', price: 100, stock: 5, pictureUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs6m9foeE2c_-B78T641UXQc3jCiVlmvDvuw&usqp=CAU'},
+        {id: 1, title: 'Protector bucal', category:'proteccion', description:'Protector bucal de silicona. Colores disponibles: Negro, rojo, verde, transparente.', price: 100, stock: 5, pictureUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQACk2uaLx_08rw4F6XrYYEa7i2ZLWINlJBNQ&usqp=CAU'},
         {id: 2, title: 'Guantes Protectores Sparring Gran Marc ', category:'proteccion', description:'Tipo de cierre: velcro. Colores disponibles: Rojo. Talles disponibles: 2, 3, 4, 5.', price: 100, stock: 3, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_774833-MLA50683761321_072022-O.webp'},
         {id: 3, title: 'Pads Gran Marc', category:'proteccion', description:'Protectores de pie/pads. Colores disponibles: Azul, rojo. Talles: 2, 3, 4, 5.', price: 100, stock: 4, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_836751-MLA45640106647_042021-O.webp'},
         {id: 4, title: 'Protector cabezal gran Marc', category:'proteccion', description:'Cabezal protector gladiador', price: 100, stock: 6, pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_923758-MLA49373729676_032022-V.webp'},

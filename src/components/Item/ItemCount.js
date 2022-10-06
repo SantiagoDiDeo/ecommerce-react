@@ -14,11 +14,11 @@ const ItemCount = () => {
     };
 
         return (
-            <>
+            <div className='counter'>
                 <button type={'button'} onClick={countDown}>-</button>
                 <span>{count}</span>
                 <button type={'button'} onClick={countUp}>+</button>
-            </>
+            </div>
         );
 };
 
