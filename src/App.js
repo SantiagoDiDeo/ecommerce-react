@@ -8,11 +8,18 @@ import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Contact from './components/Contact/Contact';
+import CartContext from './components/context/CartContext';
+import { CacheProvider } from './components/context/CacheContext';
+import Loader from './components/Loader';
+
 
 
 function App() {
+
   return (
     <BrowserRouter>
+    <CacheProvider>
+    <CartContext.Provider value={[]}>
       <div className='contenedor' style={{backgroundImage:`url(${fondo})`}}>
         <NavBar />
         <Routes>
@@ -24,7 +31,12 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
+      </CartContext.Provider>
+      </CacheProvider>
+      <Loader  />
     </BrowserRouter>
+    
+
   );
 };
 
