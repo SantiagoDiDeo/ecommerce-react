@@ -6,3 +6,11 @@
     margin: 3rem 0;
     height: 5rem;
 }
+
+.itemDetailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }

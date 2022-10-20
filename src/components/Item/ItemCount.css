@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 1rem;
+    
 }
 
 .btn {
@@ -13,3 +13,12 @@
 .card-img-top {
     border:transparent;
 }
+
+.itemCountContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 18rem;
+  }
