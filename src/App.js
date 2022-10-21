@@ -8,7 +8,7 @@ import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Contact from './components/Contact/Contact';
-import CartContext from './components/context/CartContext';
+import CartContext, {CartProvider} from './components/context/CartContext';
 import { CacheProvider } from './components/context/CacheContext';
 import Loader from './components/Loader';
 import Favoritos from './components/Favoritos';
@@ -57,6 +57,7 @@ function App() {
     <CacheProvider>
     <CartContext.Provider value={[]}>
       <div className='contenedor' style={{backgroundImage:`url(${fondo})`}}>
+        <CartProvider>
         <NavBar />
         <FavoritosProvider>
         <Routes>
@@ -69,6 +70,7 @@ function App() {
           <Route path='/favourite' element={<Favoritos />} />
         </Routes>
         </FavoritosProvider>
+        </CartProvider>
       </div>
       </CartContext.Provider>
       </CacheProvider>
