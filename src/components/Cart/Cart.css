@@ -1,0 +1,6 @@
+.containerCart svg {
+    color: red;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}

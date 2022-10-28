@@ -11,10 +11,6 @@ const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-    
-    },[categoryId]);
-
-    useEffect(() => {
         if(categoryId) {
             getProductsByCategory(categoryId)
                 .then((data) => setProducts(data))

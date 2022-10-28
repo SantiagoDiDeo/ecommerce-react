@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
@@ -8,6 +9,8 @@ import './Item.css';
 
 
 const Item = ({ product }) => {
+    const [show, setShow] = useState(true);
+
     return (
         <div className='card'>
             <Card  style={{ width: '18rem' }}>
@@ -23,7 +26,7 @@ const Item = ({ product }) => {
                         
                         <Card.Subtitle className='divCounter'>
                         <Link  to={`/Item/${product.id}`}>
-                            <Button variant="primary">Ver detalle</Button>
+                            {show && <Button variant="primary"onClick={() => setShow(prev => !prev)}>Ver detalle</Button>}
                         </Link>
                         </Card.Subtitle>
                 </Card.Body>
