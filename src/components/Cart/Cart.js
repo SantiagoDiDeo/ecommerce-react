@@ -19,7 +19,6 @@ const Cart = () => {
     const [user, setUser] = useState(buyerMock);
     const [showModal, setShowModal] = useState(false);
     const [orderId, setOrderId] = useState();
-    console.log({cart, total});
 
     const handleOpen= () => {
         setShowModal(true);

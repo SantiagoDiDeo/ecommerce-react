@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './Cart/CartWidget';
-import  './NavBar.css';
 import { Link } from 'react-router-dom';
-import { Dropdown} from 'react-bootstrap';
+import { Button, ButtonGroup, Dropdown} from 'react-bootstrap';
+import  './NavBar.css';
 
 const NavBar = () => {
 
@@ -15,16 +15,16 @@ const NavBar = () => {
             <img src={logo} className='logo' alt="logo" />
             <Container>
             <Nav className="me-auto">
-                <Dropdown> 
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Shop
-                    </Dropdown.Toggle>
+                <Dropdown as={ButtonGroup}> 
+                <Button variant="primary">Shop</Button>
+                    <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
+                
                     <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to='/category/proteccion'>Protección</Dropdown.Item>
-                        <Dropdown.Item as={Link} to='/category/ropa'>Ropa</Dropdown.Item>
+                        <Dropdown.Item as={Link} to='/category/proteccion'>PROTECCIÓN</Dropdown.Item>
+                        <Dropdown.Item as={Link} to='/category/ropa'>INDUMENTARIA</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Navbar.Brand className='nav-title' as={Link} to='/'>Total Vision Sports - Shop</Navbar.Brand>
+                <Navbar.Brand className='nav-title' as={Link} to='/'>TOTAL VISION SPORTS</Navbar.Brand>
             </Nav>
             <CartWidget/>
             </Container>

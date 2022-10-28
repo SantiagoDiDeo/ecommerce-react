@@ -17,13 +17,9 @@ const Item = ({ product }) => {
                 <Card.Img variant="top" src={product.pictureUrl} />
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
-                        <Card.Text>
-                            {product.description}
-                        </Card.Text>
-                        <Card.Text>
+                        <Card.Text className='price'>
                             $ {product.price}
                         </Card.Text>
-                        
                         <Card.Subtitle className='divCounter'>
                         <Link  to={`/Item/${product.id}`}>
                             {show && <Button variant="primary"onClick={() => setShow(prev => !prev)}>Ver detalle</Button>}

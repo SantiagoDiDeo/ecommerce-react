@@ -1,39 +1,30 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Alert, Button, Form, Modal} from "react-bootstrap";
 import { Link } from "react-router-dom";
+import CartContext from "../context/CartContext";
 
 
 const Checkout = ({showModal, onClose, onBuy, orderId, total}) => {
-        const [user, setUser] = useState({
-            nombre: '',
-            email: '',
-            repetirEmail: ''
-        });
+        const {cart} = useContext(CartContext);
+        const [user, setUser] = useState({});
 
-        const Field = ({field, title, onChange}) => {
+        const Field = ({field, title}) => {
             const handleChange  = (evt) => {
-                onChange(field, evt.target.value)
-            }
+                setUser({
+                    ...user,
+                    [evt.target.name]: evt.target.value,
+                 })
+            };
 
             return (
 
             <Form.Group>
                 <Form.Label>{title}</Form.Label>
-                <Form.Control type="text" onChange={handleChange} />
+                <Form.Control type="text" name={field} onChange={handleChange} />
             </Form.Group>
-        )}
+        )};
     
-        const userDraft = {...user}        
-        
-        const onChange = (field, value) => {
-            setUser({
-                ...userDraft,
-                [field]:value
-            })
-        }
-
-        const isDisabled = user.nombre === '' || user.email === '' || user.repetirEmail === user.email || user.repetirEmail === '';
 
     return ( 
         <Modal show={showModal} onHide={onClose}>
@@ -41,9 +32,10 @@ const Checkout = ({showModal, onClose, onBuy, orderId, total}) => {
           <Modal.Title>Finalizar compra</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <Field  field='nombre' title='Nombre' type='text' onChange={onChange} />
-            <Field field='email' title='Email' onChange={onChange} />
-            <Field field='repetirEmail' title='Repetir Email' onChange={onChange} />
+            <Field  field='nombre' title='Nombre' type='text' />
+            <Field  field='telefono' title='Telefono' type='number' />
+            <Field field='email' title='Email' type='text' />
+            <Field field='repetirEmail' title='Repetir Email' type='text' />
         </Modal.Body>
         <Modal.Footer>
             {!orderId && (
@@ -51,7 +43,7 @@ const Checkout = ({showModal, onClose, onBuy, orderId, total}) => {
                     <Button variant="secondary" onClick={onClose}>
                         Cancelar
                     </Button>
-                    <Button variant="primary" onClick={onBuy} disabled={isDisabled}>
+                    <Button variant="primary" onClick={onBuy} >
                         Comprar
                     </Button>
                 </>
@@ -74,3 +66,4 @@ const Checkout = ({showModal, onClose, onBuy, orderId, total}) => {
 }
  
 export default Checkout;
+

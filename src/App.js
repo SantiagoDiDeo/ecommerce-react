@@ -7,22 +7,15 @@ import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import {CartProvider} from './components/context/CartContext';
-import { CacheProvider } from './components/context/CacheContext';
 import Loader from './components/Loader';
-
+import image from './backgroundImg.jpg'
 
 
 function App() {
-  
-  /* 
-  TODO list:
-    menu para opciones itemdetail
-    checkout con detalles
-  */
 
   return (
     <BrowserRouter>
-      <CacheProvider>
+    <div style={{ backgroundImage: `url(${image})` }}>
         <CartProvider>
           <NavBar />
                 <Routes>
@@ -31,13 +24,11 @@ function App() {
                   <Route path='/item/:id' element={<ItemDetailContainer />} />
                   <Route path='/cart' element={<Cart />} />
                   <Route path='/checkout' element={<Checkout />} />
-                  
               </Routes>
         </CartProvider>
-      </CacheProvider>
       <Loader  />
+    </div>
     </BrowserRouter>
-    
 
   );
 };

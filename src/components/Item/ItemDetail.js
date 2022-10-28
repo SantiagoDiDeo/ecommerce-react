@@ -20,18 +20,24 @@ const ItemDetail = ({ product }) => {
 
     return (
         <div className='itemDetailContainer'>
+          <Card>
           <Card.Img src={product.pictureUrl} />
           <Card.Title >{product.title}</Card.Title>
             <Card.Text >{product.description}</Card.Text>
-            <Card.Text >
-              ${product.price}
-            </Card.Text>
+            <Card.Text >${product.price}</Card.Text>
+            <Card.Text></Card.Text>
             {showItemCount && (<ItemCount initial={1} stock={10} onAdd={handleAdd} />)}
             {!showItemCount && (
-              <Link to='/cart'>
-                <Button variant="success">Ir al Carrito</Button>
-              </Link>
+              <>
+                <Link to='/cart'>
+                  <Button variant="success">Ir al Carrito</Button>
+                </Link>
+                <Link to='/'>
+                  <Button variant="secondary">Seguir comprando</Button>
+                </Link>
+              </>
           )};
+          </Card>
         </div>
       );
  };

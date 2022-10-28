@@ -6,8 +6,11 @@
     width: fit-content;
     margin: 10px auto;
     border: none;
-    border-radius: unset;
-    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .divCounter {
