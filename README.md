@@ -1,3 +1,9 @@
+<!-- 
+luego de terminar con el protecto, borrar carpeta docs y hacer npm run build
+
+cambio el nombre a docs de la nueva carpeta build 
+ -->
+
 # Ecommerce Total Vision Sports
 
 Este es un proyecto creado a partir de las siguientes herramientas:
@@ -16,13 +22,13 @@ Este es un proyecto creado a partir de las siguientes herramientas:
 
 ## Demo
 
-<!-- agregar GIF -->
+<!-- agregar GIF con gifcap.dev y guardarlo en storage de firabase ![](aca dentro va el link del gif) -->
 
 ## Estructura de directorios
 
- - Components
- - Contexts
- - Utils
+ - `/component`
+ - `/context`
+ - `/utils`
 
 
 
