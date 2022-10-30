@@ -21,7 +21,6 @@ Este es un proyecto creado a partir de las siguientes herramientas:
 
 ## Deployment
 
-<!-- agregar link de deploy con [] -->
 
 ## Demo
 
