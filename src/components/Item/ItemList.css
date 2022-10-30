@@ -1,6 +1,6 @@
 .itemList {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 2rem;
 }
