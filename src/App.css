@@ -38,10 +38,14 @@
 }
 
 .contenedor {
-  background-size: cover;
-  background-repeat: round;
+  
   size: 10rem;
   height: fit-content;
 
+}
+
+.inicio-img {
+  display: block;
+  background-attachment: fixed;
 }
 

@@ -6,6 +6,9 @@ cambio el nombre a docs de la nueva carpeta build
 
 # Ecommerce Total Vision Sports
 
+El proposito de este proyecto es la creacion de un ecommerce funcional para el curso de ReactJS de CoderHouse. 
+Se trata de una app dinamica y simple en la que se puede navegar por secciones, visualizar contenido con sus respectivos detalles y precios, y armar un carrito de compras, con la posibilidad de eliminar productos o terminar la compra en un checkout, a traves de un formulario donde se solicitan datos del cliente. 
+
 Este es un proyecto creado a partir de las siguientes herramientas:
  - CRA
  - ReactJS
@@ -14,7 +17,7 @@ Este es un proyecto creado a partir de las siguientes herramientas:
  - React-Router-DOM
  - Firebase
  - Formik
-<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
+
 
 ## Deployment
 
@@ -22,7 +25,8 @@ Este es un proyecto creado a partir de las siguientes herramientas:
 
 ## Demo
 
-<!-- agregar GIF con gifcap.dev y guardarlo en storage de firabase ![](aca dentro va el link del gif) -->
+
+![](https://firebasestorage.googleapis.com/v0/b/totalvision-ecommerce.appspot.com/o/ecommerce-gif.gif?alt=media&token=1a476071-aa6c-44ad-96f2-0fa6f103307e)
 
 ## Estructura de directorios
 
@@ -31,6 +35,7 @@ Este es un proyecto creado a partir de las siguientes herramientas:
  - `/utils`
 
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

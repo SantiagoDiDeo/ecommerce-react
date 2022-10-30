@@ -1,32 +1,29 @@
 
 import { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import { getProduct } from "../utils/products";
 import ItemDetail from "./ItemDetail";
 import './ItemDetailContainer.css';
 
 
 
-const ItemDetailContainer=()=>{
+const ItemDetailContainer = () => {
 const { id } = useParams();
-const [product, setProduct] = useState([]);
+const [ product, setProduct ] = useState( [] );
 
-useEffect(()=>  {
+useEffect( () =>  {
     getProduct(id)
-        .then((data) => {
-            setProduct(data)
-        })
-        .catch(error => console.warn(error))   
-    }, [id]);
+        .then( (data) => { setProduct(data) } )
+        .catch(error => console.warn(error) )   
+    }, [ id ]);
 
-    return(
-    <Container>
-        
+    return (
+        <Container>
             <h2 className="h2">Detalle del Producto</h2>
-            { product && <ItemDetail product={product}/>}
-    </Container>
+            { product && <ItemDetail product={ product } /> }
+        </Container>
     );
-}
+};
 
 export default ItemDetailContainer;

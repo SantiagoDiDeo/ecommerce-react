@@ -10,7 +10,12 @@
 .itemDetailContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
     
   }
+
+.itemDetailContainer a button {
+    margin: 0.5rem;
+}

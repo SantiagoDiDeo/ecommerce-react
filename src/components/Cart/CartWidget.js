@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import CartContext from "../context/CartContext";
 
 const CartWidget = () => {
-    const {totalNumber} = useContext(CartContext)
+    const { totalNumber } = useContext(CartContext);
 
     return (
         <>
             <Link to='/cart'>
                 <HiShoppingCart/>
             </Link>
-            {totalNumber > 0 && (<Badge bg="secondary">{totalNumber}</Badge>)}
+            { totalNumber > 0 && ( <Badge bg="secondary">{totalNumber}</Badge> ) }
             
         </>
     );

@@ -1,0 +1,18 @@
+.card-product {
+    display: flex;
+    border-bottom: 1px solid gray;
+    border-bottom: inset;
+    border-radius: 0;
+    width: -webkit-fill-available;
+
+}
+
+.card-product .card-img-top {
+    width: 5rem;
+}
+
+.card-product-price {
+    position: relative;
+    top: 50%;
+    left: 35%;
+}
