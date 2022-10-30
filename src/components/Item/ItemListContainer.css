@@ -1,5 +1,6 @@
 .tituloSaludo {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     font-family: andale mono, monospace;
     width: fit-content;
