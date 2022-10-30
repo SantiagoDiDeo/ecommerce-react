@@ -21,9 +21,6 @@ Este es un proyecto creado a partir de las siguientes herramientas:
 
 ## Deployment
 
- - Github
-[https://santiagodideo.github.io/ecommerce-react/]
-
  - Vercel
 [https://ecommerce-react-theta.vercel.app/]
 
